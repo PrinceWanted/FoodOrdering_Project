@@ -1,0 +1,37 @@
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Omar', 'EL Shrouk', 'omar@yahoo.com', '12345', '22/01');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Amir', 'EL Tagamo3', 'amir@yahoo.com', '54321', '23/01');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Hoda', 'El Tagamo3', 'hoda@yahoo.com', '13579', '24/01');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'John', 'Sheraton', 'john@yahoo.com', '97531', '22/02');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Fandary', 'Rehab', 'fanfan@yahoo.com', '24680', '23/02');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Tahseen', 'Hurghada', 'kurwaboi@yahoo.com', '08642', '24/02');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Ziad', 'Madinty', 'ziad@yahoo.com', '11111', '22/03');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Yahia', 'El Maadi', 'yahia', '22222', '23/03');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Korim', 'Madinet Nasr', 'korim@yahoo.com', '33333', '24/03');
+INSERT INTO `sys_user` (`System_User_ID`, `System_Name`, `System_User_Address`, `System_User_email`, `credit_card_no`, `credit_card_exp_date`) VALUES (NULL, 'Seif', 'El Rehab', 'seif@yahoo.com', '44444', '22/04');
+
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Mc Donalds', 'El Tagamo3');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Burger King', 'El Shrouk');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'KFC', 'El Madinty');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Hardee\'s', 'El Maadi');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Papa John\'s', 'Madinet Nasr');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Arby\'s', 'El Shrouk');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Pizza Hut', 'El Tagamo3');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Domino\'s Pizza', 'Madinty');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'DD\'s', 'El Maadi');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES (NULL, 'Crepe City', 'El Rehab');
+
+INSERT INTO `user_message` (`Message_ID`, `Cust_Message`, `Sender`) VALUES (NULL, 'I want to get my money back.', '1');
+INSERT INTO `user_message` (`Message_ID`, `Cust_Message`, `Sender`) VALUES (NULL, 'Where is my delivery!!!', '6');
+INSERT INTO `user_message` (`Message_ID`, `Cust_Message`, `Sender`) VALUES (NULL, 'Thank you Wassally!!!', '7');
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES (NULL, 'Twister', 'Chicken', '29', '7 min', '3');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES (NULL, 'Big Mac', 'Beef', '34', '5 min', '1');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES (NULL, 'Chicken Ranch', 'Chicken', '60', '30 min', '5');
+
+INSERT INTO `food_order` (`Order_ID`, `Total_Price`, `Order_Date`, `Customer_ID`) VALUES (NULL, '99', '2020-05-14', '6');
+INSERT INTO `food_order` (`Order_ID`, `Total_Price`, `Order_Date`, `Customer_ID`) VALUES (NULL, '60', '2020-05-28', '2');
+INSERT INTO `food_order` (`Order_ID`, `Total_Price`, `Order_Date`, `Customer_ID`) VALUES (NULL, '29', '2020-06-09', '7');
+
+INSERT INTO `order_detail` (`Order_Detail_ID`, `Order_id`, `Dish_id`) VALUES (NULL, '1', '1');
+INSERT INTO `order_detail` (`Order_Detail_ID`, `Order_id`, `Dish_id`) VALUES (NULL, '3', '2');
+INSERT INTO `order_detail` (`Order_Detail_ID`, `Order_id`, `Dish_id`) VALUES (NULL, '2', '3');

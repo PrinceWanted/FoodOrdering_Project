@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Account</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src = "Includes/script.js"></script>
+        <style>
+            input[type=text], input[type=password]{
+                width: 25%;
+            }
+        </style>
+    </head>
+    <body>
+         <header> <div class = "wrapper">
+           <div class ="Logo"><a href="Home.html">Wassally</a></div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Restaurants.html">Restaurants</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li class = "dd-submenu" onmouseover="moreFunction()" onmouseout="lessFunction()"><a href="#" class = "current-page">Account</a>
+                    <ul id = "more">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class = "menu-toggle"><i class = "fa fa-bars" aria-hiddea = "true"></i></div>
+             </div>
+        </header>
+        <div class = "login-bg">
+        <section class="search-bar"></section>
+        
+            
+            
+            <form class="login">
+            <div class="container">
+                <label class = "loginlbl" for="UserName"><b>Username</b></label>
+                <input class = "texts" type="text" placeholder="Enter Username" name="Username" class="logname" required>
+                
+                <label class = "loginlbl" for="password"><b>Password</b></label>
+                <input class = "texts" type="password" placeholder="Enter Password" name="password" class="logpass" required>
+                
+                
+                <button class="loginbutton" type="submit">Login</button>
+                
+            <h6 id= "create"><a href="signup.html">Create Account?</a></h6>
+            
+            </div>
+        </form>
+        </div>    
+            
+                <footer>
+            <div>
+                <h4>CONNECT</h4>
+                <ul class = "footerul">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebookLogo.png" alt="Facebook Logo" class="FB">Facebook</a></li>
+                    <li><a href="https://twitter.com/home" target="_blank"><img src="images/twitterLogo.webp" alt="Twitter Logo" class="TW">Twitter</a></li>
+                    <li><a href="#" target="_blank"><img src="images/gmailLogo.png" alt="Twitter Logo" class="GGS">Google</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>HELP</h4>
+                <ul class = "footerul">
+                    <li><a href="helpCenter.html">Help Center</a></li>
+                    <li><a href="Home.html#getstarted">Get Started</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ABOUT</h4>
+                <ul class = "footerul">
+                    <li><a href="Home.html#about">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Service</a></li>
+                </ul>
+            </div>
+            <hr>
+            <h6 class="copyright">Copyright &copy; 2020 Wassally</h6>
+        </footer>
+    </body>
+</html>

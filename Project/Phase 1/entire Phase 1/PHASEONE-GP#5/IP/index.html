@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src = "Includes/script.js"></script>
+        <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css.font-awesome.min.css" rel = "stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script> 
+            $(document).ready(function(){
+                $(".default").click(function(){ 
+                    $(".search-dropdown ul").toggleClass("active");
+                });
+                
+            $(".search-dropdown ul li").click(function(){
+                var text = $(this).text();
+                $(".default").text(text);
+                $(".search-dropdown ul").removeClass("active");
+            })    
+            });
+        </script>
+    </head>
+    <body>
+        
+        <header> <div class = "wrapper">
+           <div class ="Logo"><a href="Home.html">Wassally</a></div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Home.html" class = "current-page">Home</a></li>
+                <li><a href="Restaurants.html">Restaurants</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li class = "dd-submenu" onmouseover="moreFunction()" onmouseout="lessFunction()"><a href="#">Account</a>
+                    <ul id = "more">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class = "menu-toggle"><i class = "fa fa-bars" aria-hiddea = "true"></i></div>
+             </div>
+        </header>
+        
+        <div class = "searchheader">
+            <form> 
+                <h1 id="order"> Order from your favorite Restaurant near you! </h1>
+                <div class= "form-box"> 
+                    <div class = "search-dropdown">
+                        <div class = "default">New Cairo</div>
+                        <ul> 
+                            <li><a href = "#">New Cairo</a></li>
+                            <li><a href = "#">Maadi</a></li>
+                            <li><a href = "#">Nasr City</a></li>
+                            <li><a href = "#">Madinty</a></li>
+                            <li><a href = "#">October-Zamalek</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class = "search-field place"  placeholder="What are you craving?.." > 
+                    <button class = "search-btn" type="button">Search</button>
+                </div>
+            </form>
+        
+        </div>
+        
+        <p id = "explore"> Or Order from popular resturaunts!</p>
+        <div class = "box-area">
+            <div class = "single-box">
+                 <div class = "img"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>Arby's</strong></span>
+                        <p>Inspiring smiles through delicious experiences, Arby's delivers on its purpose by celebrating the art of meatcraft! with a variety of high-quality protiens and crave-able sides!</p>
+                </div> 
+                <a href="Restaurants.html">Go to Arby's!</a>
+            </div>
+            
+            <div class = "single-box">
+               
+                <div class = "img"> </div>
+                    <div class = "imgtext">
+                    <span class = "headertext"><strong>Pizza Hut</strong></span>
+                    <p>Pizza Hut is known for its Italian American cuisine menu, including delicious pizza and pasta as well as amazing side dishes.</p>
+                </div>
+                <a href="Restaurants.html">Go to Pizza Hut!</a>
+            </div>
+            
+            
+            <div class = "single-box">
+                 <div class = "img"></div>
+                    <div class = "imgtext">
+                    <span class = "headertext"><strong>Burger King</strong></span>
+                    <p>Enjoy the best quality meal in town and bring the carnivore inside of you with burger king's specialty sandwiches, combos and much more!</p>
+                </div>
+                <a href="Restaurants.html">Go to Burger King!</a>
+            </div>
+            
+            <div class = "single-box">
+                 <div class = "img"></div>
+                    <div class = "imgtext">
+                        <span class = "headertext"><strong>McDonald's</strong></span>
+                        <p>Your hub for Everything! Order your favorite meal to your doorstep now, You're Welcome.<br>Enjoy!</p>
+                </div> 
+                <a href="Restaurants.html">Go to Mac!</a>
+            </div>
+            
+            <div class = "single-box">
+                 <div class = "img"></div>
+                    <div class = "imgtext">
+                        <span class = "headertext"><strong>Papa John's</strong></span>
+                        <p>Bored? order a pizza, Hungry? order two pizza's, feeling sad? order a family package! And let your stomach enjoy a perfect hot pizza.</p>
+                </div>
+                <a href="Restaurants.html">Go to Papa John's!</a>
+            </div>
+            
+            <div class = "single-box">
+                 <div class = "img"></div>
+                    <div class = "imgtext">
+                        <span class = "headertext"><strong>DD's</strong></span>
+                        <p>Spread happiness and get the best Donuts in town, available in all colors and vibes!</p>
+                </div>
+                <a href="Restaurants.html">Go to DD's!</a>
+            </div>
+            
+        </div>
+        <div class ="discover">
+             <p  id ="offers">Discover Offers now from your favorite restaurants!</p>
+            <button id = "discover" type="button"><a href = "#offer">Discover Offers</a></button>
+        </div>
+        <div class = "about" >
+            <div class = "about-bg"> <img src= "images/about.jpg" width="100%" id ="about"></div>
+            <p class = "whoarewe"> Who are we? </p>
+            <p id = "about-us"> Wassally is an Egyptian website found by food lovers for ordering your favorite foods in a fast and easy way, delivered to your doorstep! <br>we are continously expanding and adding more restaurants to our menu.. Always stay tuned for more.</p>
+        </div>
+        <div class = "getStarted">
+            <p  class = "started"  id = "getstarted">Lets get you your first order! </p>
+           <div  class = "ordernow">
+                   <div class ="single-icon"><img src = "images/home.png" id ="homeicon" width="50px" height="50px">Choose your area</div>
+                   <div class ="single-icon"><img src = "images/food.png" id ="homeicon" width="50px" height="50px">Order meal</div>
+                   <div class ="single-icon"><img src = "images/deliver.png" id ="homeicon" width="50px" height="50px">Get it to your doorstep</div>
+               </div> 
+        </div> 
+        <p class ="offer" id="offers">Latest Offers!</p>
+        <div class ="offers" id ="offer">
+            
+            <div class ="coupon">
+                <div class ="cpn-container">
+                    <h3 id ="cpntitle">Pizza Hut</h3>
+                </div>
+                <img src ="images/pizzaoffer.jpg" style="width: 100%">
+                <div class ="cpn-container" style ="background-color: snow">
+                    <h2><b>BUY 2 GET 1 FREE</b></h2>
+                    <p>Get 2 large pizza's and enjoy another free one just for this price!</p>
+                </div>
+                <div class = "cpn-container">
+                    <p> Use promo code: <soan class = "promo">HHW294</soan></p>
+                    <p class ="expire">Valid for: One week</p>
+                    <button type="button" id="cbtn">Add to Cart</button>
+                </div>
+            </div>
+                        <div class ="coupon">
+                <div class ="cpn-container">
+                    <h3 id ="cpntitle">Dunkin Donuts</h3>
+                </div>
+                <img src ="images/ddOffer.png" style="width: 100%">
+                <div class ="cpn-container" style ="background-color: snow">
+                    <h2><b>BUY 9 GET 3 FREE</b></h2>
+                    <p>Get a 12 donuts box and pay for 9 only!</p>
+                </div>
+                <div class = "cpn-container">
+                    <p> Use promo code: <soan class = "promo">2AHW254</soan></p>
+                    <p class ="expire">Valid for: One day</p>
+                    <button type="button" id="cbtn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <h4>CONNECT</h4>
+                <ul class = "footerul">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebookLogo.png" alt="Facebook Logo" class="FB">Facebook</a></li>
+                    <li><a href="https://twitter.com/home" target="_blank"><img src="images/twitterLogo.webp" alt="Twitter Logo" class="TW">Twitter</a></li>
+                    <li><a href="#" target="_blank"><img src="images/gmailLogo.png" alt="Twitter Logo" class="GGS">Google</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>HELP</h4>
+                <ul class = "footerul">
+                    <li><a href="helpCenter.html">Help Center</a></li>
+                    <li><a href="#getstarted">Get Started</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ABOUT</h4>
+                <ul class = "footerul">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Service</a></li>
+                </ul>
+            </div>
+            <hr>
+            <h6 class="copyright">Copyright &copy; 2020 Wassally</h6>
+        </footer>
+    </body>
+</html>

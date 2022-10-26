@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Restaurants</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src = "Includes/script.js"></script>
+<!--        <script type="text/javascript" src="jsStyle.js"></script>-->
+    </head>
+    <body>
+        
+        <header> <div class = "wrapper">
+           <div class ="Logo"><a href="Home.html">Wassally</a></div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Restaurants.html" class = "current-page">Restaurants</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li class = "dd-submenu" onmouseover="moreFunction()" onmouseout="lessFunction()"><a href="#">Account</a>
+                    <ul id = "more">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class = "menu-toggle"><i class = "fa fa-bars" aria-hiddea = "true"></i></div>
+             </div>
+        </header>
+        
+        
+        <section class="search-bar">
+        <div class = "Rest-menu">
+        <div id="Rest_List">
+            <br>
+            <p id="Rheader">Restaurants near me</p>
+            <ul>
+               
+            <li class = "R-list"> 
+                <img src="images/BurgerKing.png" id=LOGO onclick="BurgerKingMenu()">
+                <div class = "menucontent"><h1 id = "Restaurant-Name">Burger King</h1>
+                <p id="mini-Discription">Sandwiches,Burgers,Fast food</p>
+                <img id="rating"src="images/Star_rating_3.5_of_5.png" >
+                <p id="rating_Num">(1335)</p>
+                <p id="delivery-time">30-40 mins</p>
+                <p id="DeliveryPrice">Delivery price : 20 EGP</p></div>
+           <button id="menu_Button" onclick="OpenPopUpMenu()" > </button>
+                </li>
+                 
+            <li class = "R-list"><img src="images/Mac.png" id=LOGO>
+                <div class = "menucontent">
+                <h1 id = "Restaurant-Name">McDonald's</h1>
+                <p id="mini-Discription">Sandwiches,Beverages,Burgers,Fast food</p>
+                <img id="rating"src="images/Star_rating_4.5_of_5.png" >
+                <p id="rating_Num">(4306)</p>
+                <p id="delivery-time">40-45 mins</p>
+                <p id="DeliveryPrice">Delivery price : 30 EGP</p>
+                    </div>
+                <button id="menu_Button" onclick="OpenSecondPopUpMenu()" > </button>
+                </li>
+            <li class = "R-list"><img src="images/KFC.png" id=LOGO>
+                <div class = "menucontent">
+                <h1 id = "Restaurant-Name">KFC</h1>
+                <p id="mini-Discription">Sandwiches,Beverages,Fast food</p>
+                <img id="rating"src="images/Star_rating_4.5_of_5.png" >
+                <p id="rating_Num">(2353)</p>
+                <p id="delivery-time">20-25 mins</p>
+                <p id="DeliveryPrice">Delivery price : 15 EGP</p>
+                </div>
+                <button id="menu_Button" onclick="OpenThirdPopUpMenu()" > </button>
+                </li>
+                <br>
+            <li class = "R-list"><img src="images/Hardees-logo.png" id="Hardees" >
+                <div class = "menucontent">
+                 <h1 id = "Restaurant-Name">Hardee's</h1>
+                <p id="mini-Discription">Sandwiches,Beverages,Chicken,Fast food</p>
+                <img id="rating"src="images/Star_rating_3.5_of_5.png" >
+                <p id="rating_Num">(1894)</p>
+                <p id="delivery-time">45-50 mins</p>
+                <p id="DeliveryPrice">Delivery price : 0.0 EGP</p>
+                </div>
+                <button id="menu_Button" onclick="OpenFourthPopUpMenu()" > </button>
+                </li>
+                
+            <li class = "R-list"><img src="images/Arbys.png" id="Arby's" width="140" height="140">
+                
+                <div class = "menucontent">
+                 <h1 id = "Restaurant-Name">Arby's</h1>
+                <p id="mini-Discription">Sandwiches,Beverages,Fast food</p>
+                <img id="rating"src="images/Star_rating_4.5_of_5.png" >
+                <p id="rating_Num">(3894)</p>
+                <p id="delivery-time">35-40 mins</p>
+                <p id="DeliveryPrice">Delivery price : 10.0 EGP</p>
+                </div>
+                <button id="menu_Button" onclick="OpenFifthPopUpMenu()" > </button>
+                </li>
+                
+            <li class = "R-list"><img src="images/pizzahut.png" id="Pizza Hut" idth="140" height="140">
+                <div class = "menucontent">
+                 <h1 id = "Restaurant-Name">Pizza Hut</h1>
+                <p id="mini-Discription">Pizza,Beverages,Salads</p>
+                <img id="rating"src="images/Star_rating_3.5_of_5.png" >
+                <p id="rating_Num">(2494)</p>
+                <p id="delivery-time">55-70 mins</p>
+                <p id="DeliveryPrice">Delivery price : 20.0 EGP</p>
+                </div>
+                <button id="menu_Button" onclick="OpenSixthPopUpMenu()" > </button>
+                </li>
+                
+                <li class = "R-list"><img src="images/Papa.png" id="Papa John's" idth="140" height="140">
+                <div class = "menucontent">
+                 <h1 id = "Restaurant-Name">Papa John's</h1>
+                <p id="mini-Discription">Pizza,Beverages,Salads</p>
+                <img id="rating"src="images/Star_rating_4.5_of_5.png" >
+                <p id="rating_Num">(3344)</p>
+                <p id="delivery-time">60-80 mins</p>
+                <p id="DeliveryPrice">Delivery price : 25.0 EGP</p>
+                </div>
+                <button id="menu_Button" onclick="OpenSeventhPopUpMenu()" > </button>
+                </li>
+                
+                <li class = "R-list"><img src="images/dunkin.png" id="ddonuts" idth="140" height="140">
+                <div class = "menucontent">
+                 <h1 id = "Restaurant-Name">Dunkin Donuts</h1>
+                <p id="mini-Discription">Donuts,Beverages,coffee,sandwiches</p>
+                <img id="rating"src="images/Star_rating_3.5_of_5.png" >
+                <p id="rating_Num">(5092)</p>
+                <p id="delivery-time">20-30 mins</p>
+                <p id="DeliveryPrice">Delivery price : 15.0 EGP</p>
+                </div>
+                <button id="menu_Button" onclick="OpenEightPopUpMenu()" > </button>
+                </li>
+                
+            </ul>
+         <br><br><br>
+        
+            </div>
+
+
+            
+            <div id="BG_Pop_Up">
+        
+            <button id="Close_Button" onclick="closePopUpMenu()">X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+            <ul>
+                <li><img id="Menu_Image" src="images/BurgerKing1.jpg">
+                    
+                <p id="Food_Title">Double Burger</p>
+                <p id="Food_Ing">Buffalo meet, onions , barbequ, french fries</p>
+                <p id="Price">Price : 56.3 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/BG2.jpg">
+                <p id="Food_Title">Mapple Waffel Sandwitch</p>
+                <p id="Food_Ing">waffle , burger , mapl Syrup</p>
+                <p id="Price">Price : 35 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/BG3.png">
+                <p id="Food_Title">Rodeo King Sandwich</p>
+                <p id="Food_Ing">Buffalo meet, cheese , onion rings</p>
+                <p id="Price">Price : 75 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+
+             </div>
+            
+            <div id="MAC_Pop_Up">
+            <button id="Close_Button" onclick="closeSecondPopUpMenu()" >X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+           
+                            <ul>
+                <li><img id="Menu_Image" src="images/Mac1.jpg">
+                    
+                <p id="Food_Title">Big Tasty</p>
+                <p id="Food_Ing">Buffalo meet, Cheese , Tomatos, lettuce</p>
+                <p id="Price">Price : 70 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/MAC2.jpg">
+                <p id="Food_Title">Four Patty Bic Mac</p>
+                <p id="Food_Ing">4 beef burger pieces, Cheese , Lettuce</p>
+                <p id="Price">Price : 85 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/Mac%203.jpg">
+                <p id="Food_Title">Filet-O-Fish</p>
+                <p id="Food_Ing">Fish , Cheese</p>
+                <p id="Price">Price :25 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+
+                    
+             
+        
+                 
+
+           
+            </div>
+            
+            <div id="KFC_Pop_Up">
+            <button id="Close_Button" onclick="closeThirdPopUpMenu()" >X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+           
+                            <ul>
+                <li><img id="Menu_Image" src="images/kfc1.webp">
+                    
+                <p id="Food_Title">Smoky BBQ Twister</p>
+                <p id="Food_Ing">1 smkoey bbq twister,Chicken,Rice,Coloslaw</p>
+                <p id="Price">Price : 65 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/kfc2.webp">
+                <p id="Food_Title">Shrimp Box</p>
+                <p id="Food_Ing">7 pcs shrimps +Coleslaw +fries + Rice +Drink</p>
+                <p id="Price">Price : 100 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/kfc3.webp">
+                <p id="Food_Title">SMART BOX</p>
+                <p id="Food_Ing">2 chicken pcs, Rice, coleslaw, drink & Bun</p>
+                <p id="Price">Price :49 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+       
+            </div>
+            
+            <div id="Hardees_Pop_Up">
+            <button id="Close_Button" onclick="closeFourthPopUpMenu()" >X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+           
+                            <ul>
+                <li><img id="Menu_Image" src="images/hardees1.jpg">
+                    
+                <p id="Food_Title">Super Star</p>
+                <p id="Food_Ing">Charbroiled burger patties,American cheese</p>
+                <p id="Price">Price : 87.50 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/hardees2.jpg">
+                <p id="Food_Title">Chicken Wrapper</p>
+                <p id="Food_Ing">Chicken tender,American Cheese,tortilla bread</p>
+                <p id="Price">Price : 38.5 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/hardees3.png">
+                <p id="Food_Title">Original Angus ThickBurger</p>
+                <p id="Food_Ing">Angus beef burger patty, cheese,tomatos,onion</p>
+                <p id="Price">Price :90 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+       
+            </div>
+            
+            <div id="Arbys_Pop_Up">
+            <button id="Close_Button" onclick="closeFifthPopUpMenu()" >X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+           
+                            <ul>
+                <li><img id="Menu_Image" src="images/Arbys1.jpg">
+                    
+                <p id="Food_Title">Roast Beef</p>
+                <p id="Food_Ing">Bee,Melted cheese,BBQ sauce</p>
+                <p id="Price">Price : 67.50 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/Arbys2.jpg">
+                <p id="Food_Title">Garlic Butter Steak</p>
+                <p id="Food_Ing">Steak,Cheese,Butterly Garlic,wranch sauce</p>
+                <p id="Price">Price : 78.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/Arbys3.jpg">
+                <p id="Food_Title">Miami Cuban Sandwich</p>
+                <p id="Food_Ing">Beef,turkey,cheese,pickles</p>
+                <p id="Price">Price :90 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+       
+            </div>
+            
+            <div id="Pizzahut_Pop_Up">
+            <button id="Close_Button" onclick="closeSixthPopUpMenu()" >X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+           
+                            <ul>
+                <li><img id="Menu_Image" src="images/pizzahut1.jpg">
+                    
+                <p id="Food_Title">Peperoni Cheese Bites</p>
+                <p id="Food_Ing">Peperoni,Melted cheese,BBQ sauce</p>
+                <p id="Price">Price : 120.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/pizzahut2.jpg">
+                <p id="Food_Title">Stuffed crust Peperoni</p>
+                <p id="Food_Ing">Peperoni,Cheese,Stuffed cheese</p>
+                <p id="Price">Price : 170.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/pizzahut3.png">
+                <p id="Food_Title">Signature Salad</p>
+                <p id="Food_Ing">Corn,Lettuce,cheese,pickles</p>
+                <p id="Price">Price :60 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+       
+            </div>
+            
+            <div id="Papa_Pop_Up">
+            <button id="Close_Button" onclick="closeSeventhPopUpMenu()" >X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+           
+                            <ul>
+                <li><img id="Menu_Image" src="images/papa1.jpg">
+                    
+                <p id="Food_Title">Peperoni Stuffed crust</p>
+                <p id="Food_Ing">Peperoni,Melted cheese,BBQ sauce</p>
+                <p id="Price">Price : 140.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/papa2.jpg">
+                <p id="Food_Title"> Veggie</p>
+                <p id="Food_Ing">vegetables,Cheese</p>
+                <p id="Price">Price : 130.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/papa3.webp">
+                <p id="Food_Title">Three Cheese</p>
+                <p id="Food_Ing">Three types of cheese, oregano</p>
+                <p id="Price">Price :160 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+       
+            </div>
+            
+            <div id="DD_Pop_Up">
+            <button id="Close_Button" onclick="closeEightPopUpMenu()" >X</button>
+            <h1 id="Pop_Up_Title">Menu List</h1>
+           
+                            <ul>
+                <li><img id="Menu_Image" src="images/dd1.png">
+                    
+                <p id="Food_Title">Strawberry Sprinkles</p>
+                <p id="Food_Ing">Strawberry, colored sprinkles</p>
+                <p id="Price">Price : 14.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button>
+                </li>
+                <li><img id="Menu_Image" src="images/dd2.jpg">
+                <p id="Food_Title"> Vanilla Sprinkles</p>
+                <p id="Food_Ing">Vanilla,Sprinkles</p>
+                <p id="Price">Price : 13.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+                
+                <li><img id="Menu_Image" src="images/dd3.jpg">
+                <p id="Food_Title">American Coffee + Donuts<p>
+                <p id="Food_Ing">Chocolate,Sprinkles</p>
+                <p id="Price">Price :20.0 EGP</p>
+                <button id="Add_To_Cart" onclick="PurchaseConfirmation()">Add to cart</button></li>
+        
+                 </ul>
+       
+            </div>
+            
+            </div>
+           
+            
+            
+            
+            
+            
+            
+            
+        <script type="text/javascript">
+                var PopUpDiv = document.getElementById("BG_Pop_Up");
+                var SecondDiv = document.getElementById("MAC_Pop_Up");
+                var ThirdDiv = document.getElementById("KFC_Pop_Up");
+                var FourthDiv = document.getElementById("Hardees_Pop_Up");
+                var fifthDiv = document.getElementById("Arbys_Pop_Up");
+                var sixthDiv = document.getElementById("Pizzahut_Pop_Up")
+                var seventhDiv = document.getElementById("Papa_Pop_Up");
+                var eightDiv = document.getElementById("DD_Pop_Up");
+            
+function  OpenPopUpMenu(){
+    PopUpDiv.style.display="block";
+}
+
+function closePopUpMenu(){
+    PopUpDiv.style.display="none";
+    
+}
+
+function  OpenSecondPopUpMenu(){
+    SecondDiv.style.display="block";
+}
+
+function closeSecondPopUpMenu(){
+    SecondDiv.style.display="none";
+    
+}
+function  OpenThirdPopUpMenu(){
+    ThirdDiv.style.display="block";
+}
+
+function closeThirdPopUpMenu(){
+    ThirdDiv.style.display="none";
+    
+}
+function  OpenFourthPopUpMenu(){
+    FourthDiv.style.display="block";
+}
+
+function closeFourthPopUpMenu(){
+    FourthDiv.style.display="none";
+    
+}  
+
+function  OpenFifthPopUpMenu(){
+    fifthDiv.style.display="block";
+}
+
+function closeFifthPopUpMenu(){
+    fifthDiv.style.display="none";
+    
+}
+            
+function  OpenSixthPopUpMenu(){
+    sixthDiv.style.display="block";
+}
+
+function closeSixthPopUpMenu(){
+    sixthDiv.style.display="none";
+    
+} 
+function  OpenSeventhPopUpMenu(){
+    seventhDiv.style.display="block";
+}
+
+function closeSeventhPopUpMenu(){
+    seventhDiv.style.display="none";
+    
+} 
+function  OpenEightPopUpMenu(){
+    eightDiv.style.display="block";
+}
+
+function closeEightPopUpMenu(){
+    eightDiv.style.display="none";
+    
+}   
+            
+function PurchaseConfirmation(){
+ var Ans = window.confirm("Are you sure you want to add this item to the cart?");
+   
+    if(Ans == true){
+    }
+}
+                </script>
+            
+            
+            
+            
+            
+            
+
+        <footer>
+            <div>
+                <h4>CONNECT</h4>
+                <ul class = "footerul">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebookLogo.png" alt="Facebook Logo" class="FB">Facebook</a></li>
+                    <li><a href="https://twitter.com/home" target="_blank"><img src="images/twitterLogo.webp" alt="Twitter Logo" class="TW">Twitter</a></li>
+                    <li><a href="#" target="_blank"><img src="images/gmailLogo.png" alt="Twitter Logo" class="GGS">Google</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>HELP</h4>
+                <ul class = "footerul">
+                    <li><a href="helpCenter.html">Help Center</a></li>
+                    <li><a href="Home.html#getstarted">Get Started</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ABOUT</h4>
+                <ul class = "footerul">
+                    <li><a href="Home.html#about">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Service</a></li>
+                </ul>
+            </div>
+            <hr>
+            <h6 class="copyright">Copyright &copy; 2020 Wassally</h6>
+        </footer>
+           
+        </section>
+    </body>
+</html>

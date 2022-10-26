@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Admin</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src = "includes/script.js"></script>
+    </head>
+    <body>
+
+        <header> <div class = "wrapper">
+           <div class ="chip">
+               <img src="images/admin.png" alt="Person" width="90" height="90">Admin</div>
+        <nav>
+            <ul class="nav_links">
+               <li class = "dd-submenu" onmouseover="moreFunction()" onmouseout="lessFunction()"><a href="#">Accounts<i class="fa fa-fw fa-user"></i></a>
+                    <ul id = "more">
+                        <li><a id="usermodal">Add</a></li>
+                        <li><a id ="editmodal">Edit/Delete</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Feedbacks<i class="fa fa-fw fa-envelope"></i></a></li>
+                <li><a href="#">Complaints</a></li>
+            </ul>
+        </nav>
+             </div>
+        </header>
+    
+
+       <div class = "mainadmin"><p id = "h-header">Daily Reports</p>
+           <div class = "admin-area">
+            <div class = "box-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>Messages</strong></span>
+                        <p>200+ New Messages</p>
+                </div> 
+            </div>
+            
+            <div class = "box-admin">
+               
+                <div class = "img-admin"> </div>
+                    <div class = "imgtext">
+                    <span class = "headertext"><strong>Account Reports</strong></span>
+                    <p>3 New reports</p>
+                </div>
+            </div>
+            
+            <div class = "box-admin">
+               
+                <div class = "img-admin"> </div>
+                    <div class = "imgtext">
+                    <span class = "headertext"><strong>Updates</strong></span>
+                    <p>10+ pending updates</p>
+                </div>
+            </div>
+        
+            
+            <div class = "box-admin">
+               
+                <div class = "img-admin"> </div>
+                    <div class = "imgtext">
+                    <span class = "headertext"><strong>Website Visits</strong></span>
+                    <p>Total visits this week</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+        <div class = "accounts"><p id = "acc-header">Accounts Management</p>
+        <div class = "admin-area">
+            <div class = "account-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>Admin</strong></span>
+                        <p>Profile Info</p>
+                </div> 
+            </div>  
+            
+            <div class = "account-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext" onmouseover="displaytable()" onmouseout="hidetable()"><strong>Users</strong></span>
+                        <p>200 Existing users</p>
+                </div> 
+            </div>  
+            
+        </div>  
+        </div>
+        <div class ="user-list">
+            <table id ="user-list">
+                <tr>
+                    <th>Username</th>
+                    <th>Phone</th>
+                    <th>ID</th>
+                </tr>
+                <tr>
+                    <td>Jason Statham</td>
+                    <td>+011xxxxx</td>
+                    <td>#928189</td>
+                </tr>  
+                <tr>
+                    <td>Sam smith</td>
+                    <td>+012xxxxxx</td>
+                    <td>#121234</td>
+                </tr>
+                    
+            </table>
+        </div>       
+        
+
+        <div id="acc-modal" class = "modal">
+                <div class ="acc-content">
+                    <span id ="modalclose">&times;</span>
+                        <form action="#" method="POST" class = "adminform">
+      
+                            <label class ="admin1">Username <input type="text" name="username" placeholder="liza.." /></label>
+                            <label class ="admin1">Email <input type="email" name="email" placeholder="Email .." /></label>
+                            <label class ="admin1">Password <input type="password" name="password" placeholder="password .." /></label>
+                            <label class ="admin1">Address <input type="text" placeholder="Cairo.."/>
+                            </label>
+                            <label class ="admin1">Phone<input type="text" name="phone" placeholder="+02 .." /></label>
+                            <label class ="admin1">Admin Access <select name="role">
+                                <option value="manager">User</option>
+                                <option value="admin">Admin</option>
+                                </select>
+                            </label>
+                            <input type="submit" name="submit" id="adminbtn" value="Add user"/>
+                    </form>
+                </div>
+            </div> 
+        <div id ="acc-modal-edit" class = "modal">
+                <div class ="acc-content">
+                    <span id ="modalcloseedit">&times;</span>
+                    <form action="#" method="POST" class = "adminform-edit">
+                        <label>Username <input type="text" name="username" placeholder="Last Name .." value="User1"/></label>
+                        <label>Email <input type="email" name="email" placeholder="Email .." value="User1@web.com" /></label>
+                        <label>Password <input type="password" name="password" placeholder="password .." value="*******"/></label>
+                        <label>Address <input name="address" value="Cairo"/>
+                        </label>
+                        <label>Phone<input type="text" name="phone" placeholder="Phone .." value="012xxxxxxx" /></label>
+                        <label>Admin Access <select name="role">
+                            <option value="manager">User</option>
+                            <option value="admin">Admin</option>
+                            </select>
+                        </label>
+                        <input type="submit" name="submit" id="adminbtn" value="Edit user"/>
+                    </form>
+                </div> </div>
+        <div class = "Orders"><p id = "order-header">Orders Management</p>
+        <div class = "admin-area">
+            <div class = "order-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>Payments</strong></span>
+                        <p>Payment History</p>
+                </div> 
+            </div> 
+            
+            <div class = "order-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong onmouseover="orderlist()" onmouseout="orderover()">Orders</strong></span>
+                        <p>Order History</p>
+                </div> 
+            </div> 
+            
+             <div class = "order-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>FAQ</strong></span>
+                        <p>Edit help center</p>
+                </div> 
+            </div> 
+        </div> 
+        </div>
+                <div class ="order-list">
+            <table id ="order-list">
+                <tr>
+                    <th>OrderID</th>
+                    <th>Date</th>
+                    <th>Payment</th>
+                </tr>
+                <tr>
+                    <td>#204923</td>
+                    <td>20/2/2020</td>
+                    <td>Cash</td>
+                </tr>  
+                <tr>
+                    <td>#129421</td>
+                    <td>19/2/2020</td>
+                    <td>Visa</td>
+                </tr>
+                    
+            </table>
+        </div>
+        <div class = "menus"><p id = "menu-header" onmouseover="buttonmenu()">Menus Management <button id="addmenu">Add to Menu</button> <button id="editmenu">Edit from Menu</button></p>
+        <div class = "admin-area">
+            <div class = "menu-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>Restaurants</strong></span>
+                        <p>show Restaurants</p>
+                </div> 
+            </div> 
+            
+            <div class = "menu-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>Menus</strong></span>
+                        <p>show Menus</p>
+                </div> 
+            </div> 
+            
+             <div class = "menu-admin">
+                 <div class = "img-admin"></div>
+                    <div class = "imgtext">
+                        
+                        <span class = "headertext"><strong>Offers</strong></span>
+                        <p>show Offers</p>
+                </div> 
+            </div> 
+        </div>     
+        </div>
+        <div id ="menu-modal-add" class ="modal">
+            <div class ="acc-content">
+                <span id ="modalclosemenu">&times;</span> 
+                <form action="#" method="POST" class ="adminform-menu-a">
+                    <label>Item Name <input type="text" name="food-name" placeholder="Food Name .." /></label>
+                    <label>Restaurant <input type="text" name="rest-name" placeholder="Restaurant name .." value="Name" /></label>
+                    <label>Price <input type="text" name="food-price" placeholder="Food price .." /></label>
+                    <label>Ingredient <textarea name="food-ing" placeholder="Ingredients .. .."></textarea></label>
+                    <label>Image<input type="file" name="image" /></label>
+                    <input type="submit" name="submit" id="adminbtn" value="Add Food Item"/>
+                </form>
+            </div>
+        </div>        
+        <div id ="menu-modal-edit" class ="modal">
+            <div class ="acc-content">
+                <span id ="modalclosemenue">&times;</span> 
+                <form action="#" method="POST" class ="adminform-menu-e">
+                    <label>Food Name <input type="text" name="food-name" placeholder="Food Name .." value="Sandwich1"/></label>
+                    <label>Restaurant <input type="text" name="rest-name" placeholder="Restaurant name .." value="Name" /></label>
+                    <label>Price <input type="text" name="food-price" placeholder="Food price .." value="LE" /></label>
+                    <label>Ingredients <textarea name="food-description" placeholder="Ingredients .. .."></textarea></label>
+                    <label>Image<input type="file" name="image" /></label>
+                    <input type="submit" name="submit" id="adminbtn" value="Edit Food"/>
+                </form>
+            </div>
+        </div>
+        
+                <script>
+            var modaladd = document.getElementById("acc-modal");
+            var modalbtn = document.getElementById("usermodal");
+            var spn = document.getElementById("modalclose");
+
+            
+            var modaledit = document.getElementById("acc-modal-edit");
+            var modaleditbtn = document.getElementById("editmodal");
+            var span = document.getElementById("modalcloseedit");
+                        
+            var menuadd = document.getElementById("menu-modal-add");
+            var menuaddbtn = document.getElementById("addmenu");
+            var spanmenu = document.getElementById("modalclosemenu");
+                        
+            var menuedit = document.getElementById("menu-modal-edit");
+            var menueditbtn = document.getElementById("editmenu");
+            var spanmenuedit = document.getElementById("modalclosemenue");
+            
+            modalbtn.onclick = function(){
+                modaladd.style.display = 'block';
+            }
+            spn.onclick = function(){
+                modaladd.style.display = 'none';
+            }
+            
+            
+            modaleditbtn.onclick = function(){
+                modaledit.style.display = 'block';
+            }
+            span.onclick = function(){
+                modaledit.style.display = 'none';
+            }            
+            menuaddbtn.onclick = function(){
+                menuadd.style.display = 'block';
+            }
+            
+            spanmenu.onclick = function(){
+                menuadd.style.display = 'none';
+            }            
+            menueditbtn.onclick = function(){
+                menuedit.style.display = 'block';
+            }
+            
+            spanmenuedit.onclick = function(){
+                menuedit.style.display = 'none';
+            }
+            
+            function displaytable(){
+                document.getElementById("user-list").style.display = 'block';
+            }
+            function hidetable(){
+                document.getElementById("user-list").style.display = 'none';
+            }
+                    
+            function orderlist(){
+                document.getElementById("order-list").style.display = 'block';
+            }       
+            function orderover(){
+                document.getElementById("order-list").style.display = 'none';
+            }        
+            
+        </script>
+    </body>
+</html>

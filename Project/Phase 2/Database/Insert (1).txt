@@ -1,0 +1,50 @@
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('1', 'Mc Donalds', 'El Tagamo3');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('2', 'Burger King', 'El Shrouk');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('3', 'KFC', 'El Madinty');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('4', 'Hardee\'s', 'El Maadi');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('5', 'Papa John\'s', 'Madinet Nasr');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('6', 'Arby\'s', 'El Shrouk');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('7', 'Pizza Hut', 'El Tagamo3');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('8', 'Domino\'s Pizza', 'Madinty');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('9', 'DD\'s', 'El Maadi');
+INSERT INTO `restaurant` (`Rest_ID`, `Rest_Name`, `Rest_Address`) VALUES ('10', 'Crepe City', 'El Rehab');
+
+INSERT INTO `user_message` (`Message_ID`, `Cust_Message`, `Sender`) VALUES (NULL, 'I want to get my money back.', '1');
+INSERT INTO `user_message` (`Message_ID`, `Cust_Message`, `Sender`) VALUES (NULL, 'Where is my delivery!!!', '6');
+INSERT INTO `user_message` (`Message_ID`, `Cust_Message`, `Sender`) VALUES (NULL, 'Thank you Wassally!!!', '7');
+
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('4', 'Big Tasty', 'Buffalo meet,cheese,onion rings', '70', '5 min', '1');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('5', 'Four Patty Big Mac', '4Beef burgers,cheese,lettuce', '85', '10 min', '1');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('6', 'Filet-o-fish', 'Fish,cheese', '25', '5 min', '1');
+
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('1', 'Double Burger', 'Buffalo meet,onions,bbq,frenchfries', '56.3', '17 min', '2');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('2', 'Maple waffle sdwch', 'waffle,burger,maple syrup', '35', '10 min', '2');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('3', 'RodeoKing Sandwich', 'Buffalo meet,onions,cheese', '75', '15 min', '2');
+
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('7', 'Smokey BBQtwister', 'Chicken,rice,coloslaw,smokey bbq twister', '65', '15 min', '3');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('8', 'Smokey Shrimp Box', '7 shrimps,coloslaw,fries,rice,drink,', '100', '18 min', '3');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('9', 'Smart Box', '2 Chicken pcs,rice,coloslaw,drink,bun', '49', '15 min', '3');
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('10', 'Super Star', 'Charbroiled burger patties,american Cheese', '87.5', '15 min', '4');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('11', 'Chicken Wrapper', 'chicken tenders,american cheese,tortilla', '38.5', '10 min', '4');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('12', 'O. Angus ThickBurger', 'Angus beef burger,cheese,tomatoes,onion', '90', '15 min', '4');
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('13', 'Roast Beef', 'beef,melted cheese,bbq', '67.5', '15 min', '6');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('14', 'Garlic Butter Steak', 'steak,cheese,butterly garlic,wranch', '78', '10 min', '6');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('15', 'Miami Cuban Sandwich', 'beef,turkey,cheese,pickles', '90', '18 min', '6');
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('16', 'Pepperoni CheeseBites','BBQ,pepperoni,melted cheese', '120', '25 min', '7');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('17', 'StuffedCrust Pepperoni', 'BBQ,pepperoni,melted cheese,stuffed cheese', '170', '25 min', '7');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('18', 'Signature Salad', 'corn,lettuce,cheese,pickles', '60', '5 min', '7');
+
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('19', 'StuffedCrust Pepperoni','BBQ,pepperoni,melted cheese', '140', '25 min', '5');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('20', 'Veggie', 'veggies,cheese', '130', '25 min', '5');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('21', 'Three Cheese', 'three types of cheese,oregano', '160', '25 min', '5');
+
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('22', 'Strawberry Sprinkles','strawberry,colored sprinkles', '14', '2 min', '9');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('23', 'Vanilla Sprinkles', 'vanilla,sprinkles', '13', '2 min', '9');
+INSERT INTO `dish` (`Dish_ID`, `Dish_Name`, `Dish_Recipe`, `Price`, `Time_To_Prepare`, `Rest_ID`) VALUES ('24', 'AmericanCoffee+donut', 'chocolate,sprinkels', '20', '5 min', '9');
